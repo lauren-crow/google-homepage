@@ -1,0 +1,17 @@
+body{
+    display: grid;
+}
+
+header {
+    grid: 10vh;
+    background: pink;
+}
+
+main {
+    background: lightgreen;
+}
+
+footer {
+    grid: 10vh;
+    background:lightblue;
+}
