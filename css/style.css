@@ -1,17 +1,143 @@
 body{
+    border: solid 5px purple;
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 100vh;
+    font-family: Roboto, arial, sans-serif;
+}
+
+a{
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+button {
+    border: none;
+}
+
+.button-grey{
+    background-color: lightgrey;
+    border: none;
+}
+
+.button-blue{
+    background-color: #4285f4;   
+    color: white;
+}
+
+container {     
     display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    /*grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "main main main"
+    "footer footer footer";*/
+    border: solid blue 5px;
+}
+
+.section {
+    border: solid 1px;
 }
 
 header {
-    grid: 10vh;
-    background: pink;
+    /*background: pink;*/
+    grid-area: header;
+    grid-row: 1 / 4;
+    min-width: 100%;
+    text-align: right;
+    font-size: 13px;
 }
 
+#burger{
+}
+
+.grey-circle {
+    background-color: grey;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    margin: 1px;
+}
+
+#row-1 {
+    max-height: 30%;
+}
+
+#row-2 {
+    max-height: 30%;    
+}
+
+#row-3 {
+    max-height: 30%;    
+}
+
+nav {
+
+}
+
+nav li {
+    width: 10%;
+}
+
+
 main {
-    background: lightgreen;
+    /*background: lightgreen;*/
+    grid-area: main;
+    grid-row: 2 / 10;
+    grid-row: span 9;
+    text-align: center;
+    padding: 10%;
+    min-height: 50vh;
+    max-height: 50vh;
+}
+
+#logo{
+    width: 180px;
+}
+
+input {
+}
+
+form{
+    margin: 3%;
+}
+
+#search-buttons{
+    margin: 5%;
+}
+
+.translate {
+    line-height: 28px;
+    font-size: small;
 }
 
 footer {
     grid: 10vh;
-    background:lightblue;
+    /*background:lightblue;*/
+    grid-area: footer;
+    grid-column: 10 / 12;
+    text-align: center;
+    bottom: 0;
+    min-width: 100vh;
+}
+
+.footer-section {
+    background-color: lightgrey;
+    min-height: 50%;
 }

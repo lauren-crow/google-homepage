@@ -9,49 +9,70 @@
     <meta name="author" content="">
 
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Images</a></li>
-                <li>
-                    <div>
-
-                    </div>
-                </li>
-                <li><button>Sign in</button></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Google</h1>
-
-        <form>
-            <input type="text" id="search-bar"></input>
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
-        </form>
-
-        <h2>Google offered in: <a href="">Svenska</a></h2>
-    </main>
-    <footer>
-        <span>
-            Sweden
-        </span>
-        <ul>
-            <li><a href="">Privacy</a></li>
-            <li><a href="">Terms</a></li>     
-            <li><a href="">Settings</a></li>
-            <li><a href="">Advertising</a></li>  
-            <li><a href="">Business</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">How Search works</a></li>      
-        </ul>
-    </footer>
-
+    <div id="container">
+            <header class="section">
+                <nav>
+                    <ul>
+                        <li><a href="">Gmail</a></li>
+                        <li><a href="">Images</a></li>
+                        <li>
+                            <a href="">
+                                <ul id="burger">
+                                    <li id="row-1">   
+                                        <div class="grey-circle"></div>
+                                        <div class="grey-circle"></div>
+                                        <div class="grey-circle"></div>
+                                    </li>
+                                    <li id="row-2">   
+                                        <div class="grey-circle"></div>
+                                        <div class="grey-circle"></div>
+                                        <div class="grey-circle"></div>
+                                    </li>
+                                    <li id="row-3">  
+                                        <div class="grey-circle"></div>
+                                        <div class="grey-circle"></div>
+                                        <div class="grey-circle"></div>
+                                    </li>
+                                </ul>
+                        </a>
+                        </li>
+                        <li><button class="button-blue">Sign in</button></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main class="section">
+                <img id="logo" src="images/Google-logo.svg">
+                <form>
+                    <input type="text" id="search-bar"></input>
+                    <div id="search-buttons">
+                        <button class="button-grey">Google Search</button>
+                        <button class="button-grey">I'm Feeling Lucky</button>
+                    </div>                
+                </form>
+            
+                <!--<h2 class="translate">Google offered in: <a href="">svenska</a></h2>-->
+            </main>
+            <!--<footer class="section">
+                <div class="footer-section 1">
+                    <span>Sweden</span>
+                </div>
+                <div class="footer-section 2">
+                    <ul>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                        <li><a href="">Settings</a></li>
+                        <li><a href="">Advertising</a></li>
+                        <li><a href="">Business</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">How Search works</a></li>
+                    </ul>
+                </div>
+            </footer>-->
+    </div>
 </body>
 </html>
