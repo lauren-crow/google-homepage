@@ -44,6 +44,10 @@ button {
     color: rgb(99, 99, 99);
     padding: 8px 13px 8px 13px;
 }
+.button-grey:hover{
+    border: solid 1px #d4d4d4;
+    border-radius: 4px;
+}
 
 .button-blue{
     background-color: #4285f4;   
@@ -115,14 +119,14 @@ input {
     height: 40px;
     border-radius: 25px; 
     border: solid 1px rgb(214, 214, 214);  
+    outline: none;
+    cursor: text;
+    text-indent: 10%;
+    position: relative;
 }
 
-input#search-bar {
-    background-image: url('images/search.png');
-    background-size:contain;
-    background-repeat: no-repeat;
-    text-indent: 20px;
-    position: relative;
+input:focus{
+    box-shadow: 0 0 2px gray;
 }
 
 #search {
